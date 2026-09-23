@@ -75,3 +75,18 @@ download them by running this script:
 If the script doesn't work for some reason, you can download the databases
 directly from
 [codecrafters-io/sample-sqlite-databases](https://github.com/codecrafters-io/sample-sqlite-databases).
+
+## Fork notes
+
+This repo builds on valentynkit's Rust solution to the CodeCrafters
+"Build Your Own SQLite" challenge (page parsing, varints, SELECT,
+WHERE, index-scan). This fork goes beyond the challenge stages toward
+a small database engine with an actual write path.
+
+Planned:
+- INSERT / UPDATE / DELETE support
+- WHERE with AND/OR, JOIN
+- Page cache / buffer pool
+- Interactive REPL with sqlite3-style dot-commands
+
+Progress will be tracked here and in the commit history.
